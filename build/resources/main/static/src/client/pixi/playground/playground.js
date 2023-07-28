@@ -21,11 +21,7 @@ export function playground() {
 
     document.body.appendChild(playgroundApp.view);
 
-    const { me } = getCurrentState();
-
-    if(me){
-        renderPlayer(me, me, playgroundApp);
-    }
+    return playgroundApp;
 
 }
 
