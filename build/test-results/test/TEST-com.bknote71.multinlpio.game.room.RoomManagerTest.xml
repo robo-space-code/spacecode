@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bknote71.multinlpio.game.room.RoomManagerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-07-28T16:17:08" hostname="iminhyeog-ui-MacBookPro.local" time="0.066">
-  <properties/>
-  <testcase name="pq_empty_poll()" classname="com.bknote71.multinlpio.game.room.RoomManagerTest" time="0.058"/>
-  <testcase name="room_poll_first()" classname="com.bknote71.multinlpio.game.room.RoomManagerTest" time="0.006"/>
-  <testcase name="pq_test()" classname="com.bknote71.multinlpio.game.room.RoomManagerTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

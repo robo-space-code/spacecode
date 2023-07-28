@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bknote71.multinlpio.protocol.info.SkillInfoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-28T16:17:08" hostname="iminhyeog-ui-MacBookPro.local" time="0.008">
-  <properties/>
-  <testcase name="json()" classname="com.bknote71.multinlpio.protocol.info.SkillInfoTest" time="0.008"/>
-  <system-out><![CDATA[{"skillId":1,"name":"a","damage":1,"skillType":null,"projectile":null,"duration":null}
-SkillInfo(skillId=1, name=a, damage=1, skillType=null, projectile=null, duration=null)
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
