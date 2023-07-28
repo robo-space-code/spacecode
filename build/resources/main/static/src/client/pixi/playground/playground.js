@@ -1,6 +1,9 @@
-export function playground(app) {
+export function playground() {
+
+    const canvasElement = document.getElementById('game-canvas');
 
     const playgroundApp = new PIXI.Application({ 
+        view: canvasElement,
         width: 1000, 
         height: 1000,
         antialias: true,
