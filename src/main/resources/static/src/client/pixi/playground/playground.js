@@ -1,6 +1,3 @@
-import renderPlayer from '../player/player';
-import { getCurrentState } from '../../state';
-
 export function playground() {
 
     const canvasElement = document.getElementById('game-canvas');
