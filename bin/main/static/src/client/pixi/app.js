@@ -7,7 +7,7 @@ export function pixiApp() {
   document.body.appendChild(app.view);
 
   makestar(app);
-  playground(app);
+  playground();
 
   app.ticker.add((delta) => {
     renderBackground(app, delta);
