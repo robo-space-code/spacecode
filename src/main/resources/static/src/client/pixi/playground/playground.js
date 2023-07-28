@@ -1,7 +1,10 @@
+import renderPlayer from '../player/player';
+import { getCurrentState } from '../../state';
+
 export function playground() {
 
     const canvasElement = document.getElementById('game-canvas');
-
+   
     const playgroundApp = new PIXI.Application({ 
         view: canvasElement,
         width: 1000, 
@@ -9,6 +12,7 @@ export function playground() {
         antialias: true,
         transparent: true
     });
+    
     playgroundApp.view.style.position = "absolute";
     playgroundApp.view.style.top = "50%";
     playgroundApp.view.style.left = "5%";
@@ -16,6 +20,13 @@ export function playground() {
     playgroundApp.view.style.border = "2px solid gray";
 
     document.body.appendChild(playgroundApp.view);
+
+    const { me } = getCurrentState();
+
+    if(me){
+        renderPlayer(me, me, playgroundApp);
+    }
+
 }
 
 export default playground;

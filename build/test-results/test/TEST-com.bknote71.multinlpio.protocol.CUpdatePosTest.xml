@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bknote71.multinlpio.protocol.CUpdatePosTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-28T14:23:50" hostname="iminhyeog-ui-MacBookPro.local" time="0.018">
+<testsuite name="com.bknote71.multinlpio.protocol.CUpdatePosTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-28T15:51:06" hostname="iminhyeog-ui-MacBookPro.local" time="0.03">
   <properties/>
-  <testcase name="set_test()" classname="com.bknote71.multinlpio.protocol.CUpdatePosTest" time="0.018"/>
+  <testcase name="set_test()" classname="com.bknote71.multinlpio.protocol.CUpdatePosTest" time="0.03"/>
   <system-out><![CDATA[{"type":"cmove","protocol":"C_Move","posInfo":{"pos":null,"dirs":["East","North"],"state":"IDLE"},"dir":null,"updown":null}
 PositionInfo(pos=null, dirs=[East, North], state=IDLE)
 ]]></system-out>

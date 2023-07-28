@@ -25,8 +25,7 @@ export function randomizeStar(star, initial) {
 
 export function makestar(app){
 
-  for (let i = 0; i < starAmount; i++)
-  {
+  for (let i = 0; i < starAmount; i++) {
     const star = {
         sprite: new PIXI.Sprite(starTexture),
         z: 0,
@@ -39,7 +38,7 @@ export function makestar(app){
     randomizeStar(star, true);
     app.stage.addChild(star.sprite);
     stars.push(star);
-}
+  }
 
 }
 
