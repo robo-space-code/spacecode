@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bknote71.multinlpio.packet.ServerPacketManagerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-28T15:51:06" hostname="iminhyeog-ui-MacBookPro.local" time="0.066">
-  <properties/>
-  <testcase name="cchat_handling()" classname="com.bknote71.multinlpio.packet.ServerPacketManagerTest" time="0.066"/>
-  <system-out><![CDATA[2023-07-29 00:51:06.069  INFO 80953 --- [    Test worker] c.b.multinlpio.packet.PacketHandler      : player is null
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
