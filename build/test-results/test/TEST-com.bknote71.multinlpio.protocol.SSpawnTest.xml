@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bknote71.multinlpio.protocol.SSpawnTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-28T13:39:36" hostname="iminhyeog-ui-MacBookPro.local" time="0.006">
+  <properties/>
+  <testcase name="spawn_json()" classname="com.bknote71.multinlpio.protocol.SSpawnTest" time="0.006"/>
+  <system-out><![CDATA[{"type":"sspawn","protocol":"S_Spawn","objects":[{"objectId":123,"name":"spawn object","posInfo":null,"statInfo":null}]}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

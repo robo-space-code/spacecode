@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "build": "webpack --config ./src/main/resources/static/webpack.dev.js",
+    "build:prd": "webpack --config ./src/main/resources/static/webpack.prod.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.21",
+    "pixi.js": "^7.2.4",
+    "redis": "^4.6.7",
+    "shortid": "^2.2.16",
+    "throttle-debounce": "^2.3.0",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/preset-env": "^7.22.9",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.3.0",
+    "cross-env": "^5.2.1",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.7.0",
+    "jest": "^25.1.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.8",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  }
+}

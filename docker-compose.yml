@@ -1,0 +1,45 @@
+version: '3'
+
+services:
+#  nlp_app:
+#    image: nlp_app
+#    container_name: nlp_app
+#    ports:
+#      - "5050:5050"
+#    volumes:
+#      - ~/DATA:/nlp/DATA
+#    deploy:
+#      resources:
+#        limits:
+#          cpus: '0.50'
+#          memory: 1G
+#        reservations:
+#          cpus: '0.25'
+#          memory: 128M
+#
+#    networks:
+#      - my_network
+
+
+  boot_app:
+    image: boot_app
+    container_name: boot_app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+
+    networks:
+      - my_network
+
+  redis:
+    image: "redis:latest"
+#    volumes:
+#      - redis_data:/data
+    networks:
+      - my_network
+
+
+networks:
+  my_network:
+    driver: bridge

@@ -1,0 +1,21 @@
+data_path: "classpath:data/"
+
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        default
+  redis:
+    host: localhost
+    port: 6379
+
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        prod
+  redis:
+    host: redis
+    port: 6379
