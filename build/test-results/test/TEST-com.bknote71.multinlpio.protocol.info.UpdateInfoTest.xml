@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bknote71.multinlpio.protocol.info.UpdateInfoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-28T14:18:13" hostname="iminhyeog-ui-MacBookPro.local" time="0.006">
+<testsuite name="com.bknote71.multinlpio.protocol.info.UpdateInfoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-28T14:23:50" hostname="iminhyeog-ui-MacBookPro.local" time="0.005">
   <properties/>
-  <testcase name="updateinfo_json()" classname="com.bknote71.multinlpio.protocol.info.UpdateInfoTest" time="0.006"/>
-  <system-out><![CDATA[{"t":1690553893946,"others":[],"bullets":[],"meteors":[],"leaderboard":null}
+  <testcase name="updateinfo_json()" classname="com.bknote71.multinlpio.protocol.info.UpdateInfoTest" time="0.005"/>
+  <system-out><![CDATA[{"t":1690554230799,"others":[],"bullets":[],"meteors":[],"leaderboard":null}
 {"type":"sentergame","protocol":"S_EnterGame","player":{"objectId":0,"name":null,"posInfo":null,"statInfo":null}}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
