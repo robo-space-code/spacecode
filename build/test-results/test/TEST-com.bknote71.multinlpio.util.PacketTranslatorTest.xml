@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bknote71.multinlpio.util.PacketTranslatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-07-28T14:23:50" hostname="iminhyeog-ui-MacBookPro.local" time="0.009">
+<testsuite name="com.bknote71.multinlpio.util.PacketTranslatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-07-28T14:39:13" hostname="LAPTOP-RN6OIUDO" time="0.008">
   <properties/>
-  <testcase name="cmove_translate()" classname="com.bknote71.multinlpio.util.PacketTranslatorTest" time="0.006"/>
-  <testcase name="cchat_translate()" classname="com.bknote71.multinlpio.util.PacketTranslatorTest" time="0.002"/>
+  <testcase name="cmove_translate()" classname="com.bknote71.multinlpio.util.PacketTranslatorTest" time="0.004"/>
+  <testcase name="cchat_translate()" classname="com.bknote71.multinlpio.util.PacketTranslatorTest" time="0.001"/>
   <testcase name="dest_test()" classname="com.bknote71.multinlpio.util.PacketTranslatorTest" time="0.0"/>
   <system-out><![CDATA[{"type":"cmove","protocol":"C_Move","posInfo":{"pos":{"x":1.0,"y":1.0},"dirs":null,"state":null},"dir":null,"updown":null}
 5
