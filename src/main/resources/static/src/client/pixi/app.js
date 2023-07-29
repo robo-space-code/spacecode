@@ -14,17 +14,20 @@ export function pixiApp() {
 
   app.ticker.add((delta) => {
 
-    const { me, meteors } = getCurrentState();
 
     renderBackground(app, delta);
 
-    if(me){
-
-      renderPlayer(me, me, playgroundApp);
-      meteors.forEach((meteor) => renderMeteor(me, meteor, playgroundApp));
     
-    }
   });
+  
+  const { me, meteors } = getCurrentState();
+  
+  if(me){
+
+    renderPlayer(me, me, playgroundApp);
+    meteors.forEach((meteor) => renderMeteor(me, meteor, playgroundApp));
+  
+  }
 
 }
 
