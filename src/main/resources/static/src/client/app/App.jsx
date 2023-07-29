@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from 'react'; // useEffect was missing from imports
-import reactLogo from './assets/react.svg';
+import reactLogo from '../../../../../public/assets/react.svg';
+
 import Editor from "@monaco-editor/react";
 import './App.css';
 
