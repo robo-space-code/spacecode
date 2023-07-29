@@ -24,7 +24,6 @@ function renderMeteor(me, meteor, app) {
     sprite.anchor.set(0.5); // Set the anchor point to the center
     sprite.x = canvasX;
     sprite.y = canvasY;
-    // sprite.rotation = direction;
     sprite.width = METEOR_RADIUS * 2;
     sprite.height = METEOR_RADIUS * 2;
     app.stage.addChild(sprite);
