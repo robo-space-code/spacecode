@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>An example .io game</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="/assets/icon64.png">
-  <meta property="description" content="A complete example multiplayer .io web game implemented from scratch. Built with Javascript and Node.js. Open source on Github.">
+  <meta property="description"
+    content="A complete example multiplayer .io web game implemented from scratch. Built with Javascript and Node.js. Open source on Github.">
   <meta property="og:title" content="An example .io game">
-  <meta property="og:description" content="A complete example multiplayer .io web game implemented from scratch. Built with Javascript and Node.js. Open source on Github.">
+  <meta property="og:description"
+    content="A complete example multiplayer .io web game implemented from scratch. Built with Javascript and Node.js. Open source on Github.">
   <meta property="og:image" content="/assets/icon1200.png">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58664433-3"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js"></script>
 
+<<<<<<< HEAD
   <!-- CodeMirror core -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/codemirror.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/codemirror.min.js"></script>
 
   <!-- Some add-ons for JavaScript support -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.3/mode/javascript/javascript.min.js"></script>
+=======
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/loader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/editor/editor.main.nls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.20.0/min/vs/editor/editor.main.js"></script> -->
+>>>>>>> 2df4194370493d9bae970c06d85e231419d08a82
 
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-58664433-3');
   </script>
+  <script src="https://unpkg.com/monaco-editor@latest/min/vs/loader.js"></script>
 </head>
+
 <body>
   <canvas id="game-canvas" class="hidden"></canvas>
+<<<<<<< HEAD
   
   <script type="module">
     import { createEditor } from './code.js';
@@ -39,6 +51,13 @@
         var editor = createEditor('editor');
     });
 </script>
+=======
+
+  <div id="javaEditor"></div>
+  <button id="getValueButton">Get Editor Value</button>
+  <button id="setFilePlayer">Switch to player.java</button>
+  <button id="setFileGiven">Switch to move.java</button>
+>>>>>>> 2df4194370493d9bae970c06d85e231419d08a82
 
 
   <div id="play-menu" class="hidden">
@@ -50,15 +69,49 @@
       hi
       <br />
     </p>
-    <hr/>
+    <hr />
     <p>
       그린반 3팀
     </p>
     <hr />
     <input type="text" id="username-input" placeholder="Username" />
     <!-- <a href="hi.html" class="button">시작</a> -->
-    <button id="play-button" >시작</button>
+    <button id="play-button">시작</button>
   </div>
+  <div id="container">
+    <button id="deck-one">Deck One</button>
+    <button id="deck-two">Deck Two</button>
+    <button id="deck-thress">Deck Three</button>
+    <button id="compile-button">Run Code</button>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      require.config({ paths: { 'vs': 'https://unpkg.com/monaco-editor@latest/min/vs' } });
+
+      let proxy = URL.createObjectURL(new Blob([`
+        self.MonacoEnvironment = {
+            baseUrl: 'https://unpkg.com/monaco-editor@latest/min/'
+        };
+        importScripts('https://unpkg.com/monaco-editor@latest/min/vs/base/worker/workerMain.js');
+    `], { type: 'text/javascript' }));
+
+      window.MonacoEnvironment = { getWorkerUrl: () => proxy };
+
+      require(["vs/editor/editor.main"], function () {
+        let editor = monaco.editor.create(document.getElementById('container'), {
+          value: [
+            'function x() {',
+            '\tconsole.log("Hello world!");',
+            '}'
+          ].join('\n'),
+          language: 'java',
+          theme: 'hc-black'
+        });
+      });
+    });
+
+  </script>
+
 
   <div id="leaderboard" class="hidden">
     <table>
@@ -66,15 +119,30 @@
         <th>Username</th>
         <th>Score</th>
       </tr>
-      <tr><td></td><td></td></tr>
-      <tr><td></td><td></td></tr>
-      <tr><td></td><td></td></tr>
-      <tr><td></td><td></td></tr>
-      <tr><td></td><td></td></tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
     </table>
-    
+
     <div id="checkbox"></div>
-    
+
   </div>
 
   <div id="game-over" class="hidden">
@@ -82,43 +150,44 @@
       GAME OVER
     </h1>
     <p>
-      
-      <h2>
-        [RESULT]
-      </h2>
-      
-      <br>
 
-      <h3>
-        <div id ="score-ranking">"구현 예정"</div>
-      </h3>
-        
-      <br>
+    <h2>
+      [RESULT]
+    </h2>
 
-      <h2>
-        [DEAD REASON]
-      </h2>
+    <br>
 
-      <br>
+    <h3>
+      <div id="score-ranking">"구현 예정"</div>
+    </h3>
 
-      <h3>
-        <div id ="dead-reason"></div>
-      </h3>
+    <br>
 
-      <br>
-    
+    <h2>
+      [DEAD REASON]
+    </h2>
+
+    <br>
+
+    <h3>
+      <div id="dead-reason"></div>
+    </h3>
+
+    <br>
+
     </p>
     <input type="text" id="username-reinput" placeholder="Username" />
     <button id="replay-button">재입장</button>
-    </div>
+  </div>
 
-    <div id="disconnect-modal" class="hidden">
-      <div>
-        <h2> 서버 연결 에러! </h2>
-        <hr />
-        <button id="reconnect-button">reconnect</button>
-      </div>
+  <div id="disconnect-modal" class="hidden">
+    <div>
+      <h2> 서버 연결 에러! </h2>
+      <hr />
+      <button id="reconnect-button">reconnect</button>
     </div>
+  </div>
 
 </body>
+
 </html>
