@@ -12,11 +12,8 @@
     "lsof": "^0.1.0",
     "monaco-themes": "^0.4.4",
     "pixi.js": "^7.2.4",
-<<<<<<< HEAD
-=======
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
->>>>>>> 2df4194370493d9bae970c06d85e231419d08a82
     "redis": "^4.6.7",
     "shortid": "^2.2.16",
     "throttle-debounce": "^2.3.0",
